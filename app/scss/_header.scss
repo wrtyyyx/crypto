@@ -1,0 +1,53 @@
+.header{
+    padding-top: 60px;
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav{
+        display: flex;
+        gap: 32px;
+        margin-left: 451px;
+        
+        
+        &__link{
+            color: aliceblue;
+            text-decoration: none;
+            font-family: 'Rubik';
+        }
+    }
+    &__sign{
+        display: flex;
+        margin-left: 56px;
+        gap: 48px;
+        &__link{
+            color: aliceblue;
+            text-decoration: none;
+            font-family: 'Rubik';
+            font-weight: 600;
+            position: relative;
+        }
+        &__link::after{
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: 67px;
+            width: 1px;
+            height: 30px;
+            opacity: 0.3;
+            background: #F2F2F2;
+        }
+        &__link_reg{
+            padding: 14px 32px;
+            text-decoration: none;
+            font-family: 'Rubik';
+            font-weight: 600;
+            color: aliceblue;
+            background: var(--Color-Accent, #3671E9);
+            border-radius: 32px;
+
+        }
+    }
+    
+}

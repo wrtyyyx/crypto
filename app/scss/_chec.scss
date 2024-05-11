@@ -1,0 +1,17 @@
+.chec{
+    padding-top: 100px;
+    text-align: center;
+    justify-content: center;
+    &__title{
+        color: aliceblue;
+        font-weight: 700;
+        font-size: 40px;
+        padding-bottom: 24px;
+    }
+    &__sub{
+        color: #e0e0e0;
+        width: 622px;
+        margin: 0 auto;
+        padding-bottom: 219px;
+    }
+}

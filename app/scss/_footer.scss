@@ -1,0 +1,90 @@
+.footer {
+    background: var(--Color-Primary, #0D0D2B);
+    padding: 80px 0;
+    &__box {
+        display: flex;
+    }
+    &__logo {
+        width: 135px;
+        height: 40px;
+        margin-right: 170px;
+    }
+    &__list1 {
+        width: 200px;
+        margin-right: 21px;
+        &__title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600px;
+            padding-bottom: 24px;
+        }
+    }
+
+    &__quic {
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        li {
+            padding-bottom: 20px;
+        }
+    }
+    &__soc {
+        margin-left: 104px;
+        &__title {
+            color: #fff;
+            font-size: 32px;
+            width: 355px;
+            padding-bottom: 40px;
+        }
+        &__box{
+            display: flex;
+            gap: 24px;
+            &__link1,&__link2,&__link3{
+                width: 96px;
+                height: 64px;
+
+            }
+            &__link1{
+                background: url('../images/Visa.svg');
+            }
+            &__link2{
+                background: url('../images/Mastercard.png');
+            }
+            &__link3{
+                background: url('../images/Bitcoin.svg');
+            }
+        }
+    }
+    &__low{
+        padding-top: 120px;
+        display: flex;
+        justify-content: space-between;
+        &__left{
+            color: #fff;
+        }
+        &__right{
+            display: flex;
+            gap: 32px;
+            &__icon1,&__icon2,&__icon3,&__icon4,&__icon5{
+                width: 24px;
+                height: 24px;
+            }
+            &__icon1{
+                background: url('../images/facebook-f\ 1.svg');
+            }
+            &__icon2{
+                background: url('../images/instagram\ 1.svg');
+            }
+            &__icon3{
+                background: url('../images/youtube\ 1.svg');
+            }
+            &__icon4{
+                background: url('../images/twitter\ 1.svg');
+            }
+            &__icon5{
+                background: url('../images/linkedin\ 1.svg');
+            }
+        }
+    }
+}

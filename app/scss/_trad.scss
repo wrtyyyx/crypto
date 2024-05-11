@@ -1,0 +1,203 @@
+.trad {
+    background: var(--Neutral-Light-BG, linear-gradient(180deg, #f8f9fb 0%, #fafbff 100%));
+    padding-bottom: 100px;
+    &__d {
+        position: relative;
+    }
+    &__card {
+        width: 942px;
+        margin: 0 auto;
+        padding: 48px;
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+        
+        z-index: 1;
+        position: absolute;
+        content: "";
+        top: -180px;
+        left: 11%;
+
+        &__top {
+            display: flex;
+            gap: 48px;
+            padding-bottom: 103px;
+
+            &__but {
+                padding: 16px 32px;
+                align-self: center;
+                color: aliceblue;
+                border-radius: 32px;
+                font-size: 18px;
+                font-weight: 600;
+                background: #3671e9;
+                text-decoration: none;
+            }
+        }
+
+        &__top .text,
+        .tf {
+            width: 400px;
+            color: black;
+            background: none;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: none;
+            border-bottom: 2px solid #e0e0e0;
+            border-radius: 4px;
+            box-sizing: border-box;
+            &::placeholder {
+                color:#0D0D2B;
+                font-size: 20px;
+            }
+        }
+        &__top .tf {
+            width: 200px;
+        }
+
+        &__botom {
+            &__up {
+                color: #3671e9;
+                font-weight: 500;
+                padding-bottom: 16px;
+            }
+            &__title {
+                color: #0d0d2b;
+                font-size: 32px;
+                font-weight: 700;
+                padding-bottom: 8px;
+            }
+            &__title span {
+                color: #3671e9;
+            }
+            &__sub {
+                color: #828282;
+            }
+        }
+    }
+    &__title {
+        padding-top: 316px;
+        text-align: center;
+        font-size: 40px;
+        width: 741px;
+        margin: 0 auto;
+        font-weight: 700;
+    }
+    &__box {
+        display: flex;
+        gap: 45px;
+        padding-top: 64px;
+    }
+    &__pic_1, &__pic{
+        width: 370px;
+        height: 433px;
+        padding: 48px 24px;
+        border-radius: 16px;
+        background: var(--Color-Secondary, #2b076e);
+        backdrop-filter: blur(125px);
+        z-index: 1;
+
+
+        &__img_1 {
+            background: url("../images/BIT.svg");
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+        }
+        &__img_2 {
+            background: url("../images/EF.png");
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+        }
+        &__img_3 {
+            background: url("../images/lt.svg");
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        &__title_1, &__title_2, &__title_3 {
+            color: var(--Neutral-White, #fff);
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 150%;
+            padding-top: 48px;
+            position: relative;
+            &::after {
+                content: "BTC";
+                position: absolute;
+                top: 50px;
+                left: 223px;
+                font-size: 18px;
+                opacity: 0.7;
+                width: 36px;
+                height: 27px;
+            }
+        }
+        &__sub {
+            color: #fff;
+            text-align: center;
+            padding-top: 16px;
+            line-height: 150%; /* 48px */
+            padding-bottom: 25px;
+        }
+        &__butt a {
+            display: flex;
+            align-items: center;
+            width: 202px;
+            height: 64px;
+            text-decoration: none;
+            border-radius: 32px;
+            background: #3671e9;
+            margin: 0 auto;
+
+            & div:nth-child(1) {
+                color: var(--Neutral-White, #fff);
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 24px;
+            }
+            & div:nth-child(2) {
+                background: url("../images/Arrow.Right.jpg");
+                width: 32px;
+                height: 32px;
+                border-radius: 16px;
+                margin-left: 24px;
+            }
+        }
+    }
+    &__pic{
+        background: #ffffff;
+        border: 1px solid #2b076e;
+        &__title_2, &__title_3{
+            color: #0D0D2B;
+        }
+
+        &__title_2{
+            &::after{
+                left: 241px;
+                color: #BDBDBD;
+                content: 'ETH';
+            }
+        }
+        &__title_3{
+            &::after{
+                left: 230px;
+                color: #BDBDBD;
+                content: 'LTC';
+            }
+        }
+        &__sub{
+            color: #828282;
+        }
+        &__butt a{
+            background: url('../images/Rights.svg') no-repeat;
+            margin: 0 auto;
+            width: 64px;
+            height: 64px;
+        }
+    }
+}

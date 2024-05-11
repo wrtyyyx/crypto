@@ -1,0 +1,116 @@
+.pro{
+    padding-top: 61px;
+    z-index: 1;
+    &__box{
+        display: flex;
+        align-items: center ;
+    }
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        width: 588px;
+
+
+        &__sale{
+            display: flex;
+            gap: 32px;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 32px;
+            color: aliceblue;
+            width: 365px;
+            height: 40px;
+            white-space: nowrap;    
+            background: rgba(255, 255, 255, 0.10);
+            position: relative;
+            margin-bottom: 24px;
+            
+            & div:nth-child(1){
+                margin-left: 20px;
+                color: black;
+                font-weight: 600;
+                letter-spacing: 0.64px;
+                white-space: nowrap;
+            }
+            & div:nth-child(2){
+                margin-right: 20px;
+            }
+
+
+        }
+        &__sale::after{
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 5px;
+            width: 113px;
+            height: 32px;
+            background: aliceblue;
+            z-index: -1;
+            border-radius: 32px;
+        }
+        &__title{
+            color: aliceblue;
+            font-weight: 700;
+            font-size: 64px;
+            margin-bottom: 24px;
+        }
+        &__sub{
+            color: #e0e0e0;
+            margin-bottom: 32px;
+        }
+        &__butt a{
+            display: flex;
+            align-items: center;
+            width: 202px;
+            height: 64px;
+            text-decoration: none;
+            border-radius: 32px;
+            background: #3671E9;
+
+            & div:nth-child(1){
+                color: var(--Neutral-White, #FFF);
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 24px;
+
+            }
+            & div:nth-child(2){
+                background: url('../images/Arrow.Right.jpg');
+                width: 32px;
+                height: 32px;
+                border-radius: 16px;
+                margin-left: 24px;
+            }   
+            }
+        }
+    &__ill{
+        background: url('../images/bit.png');
+        width: 604px;
+        height: 585px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            top: -30px;
+            left: 0;
+            width: 120px;
+            height: 997.881px;
+            transform: rotate(-120deg); 
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0.00) 99.92%);
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            top: 225px;
+            left: 336px;    
+            width: 120px;
+            height: 707.881px;
+            transform: rotate(-120deg); 
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0.00) 99.92%);
+            z-index: -1;
+        }
+    }
+    }
